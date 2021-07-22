@@ -1,0 +1,14 @@
+server:
+  port: 9296
+
+spring:
+  application:
+    name: REPOCONFIG-SERVER
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Ayodyaraj/confing-server
+          default-label: main
+          clone-on-start: true
